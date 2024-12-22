@@ -1,0 +1,8 @@
+[build]
+target = "aarch64-unknown-linux-gnu"
+
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-oe-linux-gcc"
+rustflags = [
+  "-C",  "link-arg=--sysroot=/home/erdal/motac-sdk/sysroots/cortexa72-oe-linux"
+]
